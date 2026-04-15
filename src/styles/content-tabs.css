@@ -6,9 +6,9 @@
 }
 
 .tabs__btn {
-  border: 1px solid rgba(130, 146, 132, 0.45);
-  background: rgba(248, 250, 245, 0.88);
-  color: #405149;
+  border: 1px solid rgba(160, 121, 101, 0.48);
+  background: rgba(255, 248, 239, 0.9);
+  color: #5b3a31;
   border-radius: 12px;
   padding: 0.62rem 0.95rem;
   cursor: pointer;
@@ -22,14 +22,14 @@
 }
 
 .tabs__btn.active {
-  background: linear-gradient(135deg, #8a3d33, #6f342d);
+  background: linear-gradient(135deg, #8b2a22, #67160f);
   color: #fff9f1;
   border-color: transparent;
 }
 
 .tabs__panel {
   background: linear-gradient(145deg, var(--surface-1), var(--surface-2));
-  border: 1px solid rgba(168, 182, 166, 0.52);
+  border: 1px solid rgba(185, 141, 114, 0.56);
   border-radius: var(--radius);
   padding: 1.3rem;
   box-shadow: var(--shadow);

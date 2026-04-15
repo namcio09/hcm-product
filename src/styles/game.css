@@ -9,10 +9,10 @@
 .game-note,
 .win-panel {
   background: linear-gradient(150deg, var(--surface-1), var(--surface-2));
-  border: 1px solid rgba(168, 182, 166, 0.54);
+  border: 1px solid rgba(185, 141, 114, 0.58);
   border-radius: var(--radius);
   padding: 1rem;
-  box-shadow: 0 10px 24px rgba(33, 53, 43, 0.11);
+  box-shadow: 0 10px 24px rgba(51, 27, 22, 0.13);
 }
 
 .game-progress__head {
@@ -26,7 +26,7 @@
   width: 100%;
   height: 9px;
   border-radius: 99px;
-  background: rgba(45, 90, 74, 0.18);
+  background: rgba(139, 76, 50, 0.2);
   overflow: hidden;
 }
 
@@ -34,7 +34,7 @@
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #2d5a4a, #6f8f81);
+  background: linear-gradient(90deg, #8b3b24, #c28058);
   transition: width 0.3s ease;
 }
 
@@ -47,8 +47,8 @@
 .maze-cell {
   aspect-ratio: 1;
   border-radius: 8px;
-  border: 1px solid rgba(137, 154, 139, 0.44);
-  background: #f8faf5;
+  border: 1px solid rgba(163, 125, 104, 0.5);
+  background: #fff9f2;
   position: relative;
   display: grid;
   place-items: center;
@@ -57,23 +57,23 @@
 .maze-cell.wall {
   background: repeating-linear-gradient(
     135deg,
-    #8da08f,
-    #8da08f 5px,
-    #7c907f 5px,
-    #7c907f 10px
+    #b07f63,
+    #b07f63 5px,
+    #955f46 5px,
+    #955f46 10px
   );
 }
 
 .maze-cell.start {
-  box-shadow: inset 0 0 0 2px rgba(45, 90, 74, 0.62);
+  box-shadow: inset 0 0 0 2px rgba(139, 76, 50, 0.66);
 }
 
 .maze-cell.finish {
-  box-shadow: inset 0 0 0 2px rgba(138, 61, 51, 0.62);
+  box-shadow: inset 0 0 0 2px rgba(139, 42, 34, 0.7);
 }
 
 .maze-cell__gate {
-  color: #6a5633;
+  color: #7a4d34;
   font-size: 0.95rem;
 }
 
@@ -81,9 +81,9 @@
   width: 46%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #fff, #8a3d33);
-  border: 2px solid #fdf6ea;
-  box-shadow: 0 0 0 1px rgba(138, 61, 51, 0.36);
+  background: radial-gradient(circle at 30% 30%, #fffaf2, #8b2a22);
+  border: 2px solid #fff4e4;
+  box-shadow: 0 0 0 1px rgba(139, 42, 34, 0.4);
 }
 
 .game-status {
@@ -105,10 +105,10 @@
   min-width: 1.7rem;
   padding: 0.1rem 0.38rem;
   margin: 0 0.12rem;
-  border: 1px solid rgba(137, 154, 139, 0.56);
+  border: 1px solid rgba(163, 125, 104, 0.62);
   border-radius: 6px;
-  background: #f2f5ef;
-  color: #31453b;
+  background: #fbefe3;
+  color: #5c3a31;
   font-weight: 700;
   font-size: 0.82rem;
 }
@@ -121,9 +121,9 @@
 }
 
 .game-controls button {
-  border: 1px solid rgba(45, 90, 74, 0.4);
-  background: #f2f6ef;
-  color: #2f5143;
+  border: 1px solid rgba(139, 76, 50, 0.44);
+  background: #fff4e7;
+  color: #6a3f31;
   border-radius: 10px;
   padding: 0.42rem 0.75rem;
   cursor: pointer;
@@ -131,7 +131,7 @@
 }
 
 .game-controls button:hover {
-  background: #e8efe8;
+  background: #f8e7d8;
 }
 
 .game-controls__middle {
@@ -141,8 +141,8 @@
 
 .game-controls .reset {
   margin-left: auto;
-  border-color: rgba(138, 61, 51, 0.45);
-  color: #7a362d;
+  border-color: rgba(139, 42, 34, 0.48);
+  color: #7b261d;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -157,7 +157,7 @@
   width: 100%;
   display: block;
   border-radius: 12px;
-  border: 1px solid rgba(168, 182, 166, 0.62);
+  border: 1px solid rgba(185, 141, 114, 0.66);
   margin-bottom: 0.8rem;
 }
 
@@ -170,7 +170,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(19, 28, 23, 0.58);
+  background: rgba(37, 8, 8, 0.62);
   z-index: 120;
   display: grid;
   place-items: center;
@@ -181,12 +181,12 @@
   width: min(680px, 100%);
   background: var(--surface-1);
   border-radius: 18px;
-  border: 1px solid rgba(168, 182, 166, 0.62);
+  border: 1px solid rgba(185, 141, 114, 0.66);
   padding: 1.15rem;
 }
 
 .modal-card__title {
-  color: #6b5633;
+  color: #7b4a2d;
   font-weight: 700;
   font-size: 0.86rem;
   text-transform: uppercase;
@@ -207,8 +207,8 @@
 
 .option-btn {
   text-align: left;
-  border: 1px solid rgba(137, 154, 139, 0.46);
-  background: #f4f7f1;
+  border: 1px solid rgba(163, 125, 104, 0.5);
+  background: #fff3e8;
   border-radius: 12px;
   padding: 0.55rem 0.7rem;
   cursor: pointer;
@@ -216,20 +216,20 @@
 }
 
 .option-btn.selected {
-  border-color: rgba(45, 90, 74, 0.72);
-  background: rgba(45, 90, 74, 0.14);
+  border-color: rgba(139, 76, 50, 0.76);
+  background: rgba(139, 76, 50, 0.16);
 }
 
 .modal-feedback {
   margin-top: 0.75rem;
-  color: #803830;
+  color: #8a2b21;
   font-weight: 600;
 }
 
 .submit-btn {
   margin-top: 0.85rem;
   border: 0;
-  background: linear-gradient(130deg, #2d5a4a, #24493d);
+  background: linear-gradient(130deg, #8b2a22, #6b1712);
   color: #fdf8ee;
   border-radius: 11px;
   padding: 0.6rem 1rem;
@@ -245,7 +245,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  color: #6b5532;
+  color: #7b4c2d;
   font-weight: 700;
 }
 
@@ -268,9 +268,9 @@
 }
 
 .win-panel button {
-  border: 1px solid rgba(45, 90, 74, 0.5);
-  background: #f3f7f1;
-  color: #2d5a4a;
+  border: 1px solid rgba(139, 76, 50, 0.54);
+  background: #fff1e3;
+  color: #74442f;
   padding: 0.55rem 0.9rem;
   border-radius: 10px;
   font-weight: 700;

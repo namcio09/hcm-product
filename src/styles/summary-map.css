@@ -11,18 +11,18 @@
   left: 8%;
   right: 8%;
   top: 34px;
-  border-top: 2px dashed rgba(45, 90, 74, 0.42);
+  border-top: 2px dashed rgba(139, 76, 50, 0.46);
 }
 
 .map-node {
   position: relative;
   z-index: 1;
   background: linear-gradient(160deg, var(--surface-1), var(--surface-3));
-  border: 1px solid rgba(168, 182, 166, 0.6);
+  border: 1px solid rgba(185, 141, 114, 0.62);
   border-radius: var(--radius);
   padding: 1.1rem;
   min-height: 165px;
-  box-shadow: 0 8px 24px rgba(33, 53, 43, 0.12);
+  box-shadow: 0 8px 24px rgba(51, 27, 22, 0.14);
 }
 
 .map-node__index {
@@ -33,9 +33,9 @@
   place-items: center;
   font-family: "Merriweather", serif;
   font-weight: 700;
-  border: 1px solid rgba(174, 138, 84, 0.8);
-  color: #5f4b2a;
-  background: #f6f0e3;
+  border: 1px solid rgba(200, 154, 99, 0.82);
+  color: #6a3f22;
+  background: #fdf0dd;
   margin-bottom: 0.75rem;
 }
 
@@ -60,7 +60,7 @@
     top: 10%;
     bottom: 10%;
     border-top: 0;
-    border-left: 2px dashed rgba(45, 90, 74, 0.42);
+    border-left: 2px dashed rgba(139, 76, 50, 0.46);
   }
 
   .map-node {

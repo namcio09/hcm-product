@@ -2,15 +2,15 @@
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 99;
-  background: rgba(24, 43, 36, 0.86);
-  border-bottom: 1px solid rgba(174, 138, 84, 0.32);
+  background: rgba(58, 11, 10, 0.82);
+  border-bottom: 1px solid rgba(200, 154, 99, 0.34);
   backdrop-filter: blur(9px);
   transition: background 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
 }
 
 .navbar--solid {
-  background: rgba(20, 36, 31, 0.95);
-  box-shadow: 0 10px 26px rgba(8, 16, 12, 0.45);
+  background: rgba(46, 9, 8, 0.94);
+  box-shadow: 0 10px 26px rgba(18, 4, 3, 0.52);
   backdrop-filter: blur(8px);
 }
 
@@ -28,7 +28,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  color: #f5ecdd;
+  color: #fff2de;
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 1rem;
@@ -39,7 +39,7 @@
 .brand__line {
   width: 28px;
   height: 2px;
-  background: linear-gradient(90deg, #b68d52, #ecd4a0);
+  background: linear-gradient(90deg, #b4723f, #f2c88f);
 }
 
 .navbar__menu {
@@ -51,7 +51,7 @@
 .navbar__link {
   background: transparent;
   border: 0;
-  color: #e5dbc8;
+  color: #f0dfc5;
   padding: 0.55rem 0.78rem;
   border-radius: 10px;
   cursor: pointer;
@@ -60,19 +60,19 @@
 }
 
 .navbar__link:hover {
-  color: #f2dfbb;
-  background: rgba(174, 138, 84, 0.19);
+  color: #ffe7c2;
+  background: rgba(200, 154, 99, 0.2);
   transform: translateY(-1px);
 }
 
 .navbar__toggle {
   display: none;
-  border: 1px solid rgba(174, 138, 84, 0.45);
-  background: rgba(245, 236, 221, 0.08);
+  border: 1px solid rgba(200, 154, 99, 0.46);
+  background: rgba(255, 241, 221, 0.1);
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  color: #f0e4cf;
+  color: #f8e8ce;
   cursor: pointer;
 }
 
@@ -90,10 +90,10 @@
     flex-direction: column;
     align-items: stretch;
     min-width: 220px;
-    background: rgba(20, 35, 30, 0.98);
-    border: 1px solid rgba(174, 138, 84, 0.42);
+    background: rgba(46, 8, 8, 0.97);
+    border: 1px solid rgba(200, 154, 99, 0.44);
     border-radius: 14px;
-    box-shadow: 0 16px 28px rgba(7, 14, 10, 0.5);
+    box-shadow: 0 16px 28px rgba(13, 3, 3, 0.55);
     padding: 0.6rem;
   }
 
