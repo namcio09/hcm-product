@@ -1,0 +1,111 @@
+.footer {
+  position: relative;
+  border-top: 1px solid rgba(174, 138, 84, 0.34);
+  background:
+    radial-gradient(circle at 12% 20%, rgba(174, 138, 84, 0.17), transparent 40%),
+    radial-gradient(circle at 86% 84%, rgba(45, 90, 74, 0.26), transparent 42%),
+    linear-gradient(142deg, #1c3029, #253f35 48%, #2b4339 74%, #36423b);
+  color: #efe8d9;
+  padding: 2.25rem 0 1.1rem;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ae8a54, #d0b07b, transparent);
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(180px, 0.8fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid rgba(233, 220, 197, 0.2);
+}
+
+.footer__brand h3 {
+  margin-top: 0.45rem;
+  margin-bottom: 0.65rem;
+  color: #f8f0e0;
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+}
+
+.footer__brand p {
+  color: #d9cebb;
+  max-width: 520px;
+}
+
+.footer__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(174, 138, 84, 0.64);
+  border-radius: 999px;
+  padding: 0.18rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #e3c78e;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.footer__links h4,
+.footer__meta h4 {
+  color: #f6ecdc;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__links ul,
+.footer__meta ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.footer__links a {
+  color: #ddd3bf;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: color 0.24s ease, border-color 0.24s ease;
+}
+
+.footer__links a:hover {
+  color: #f1d8a6;
+  border-color: rgba(241, 216, 166, 0.55);
+}
+
+.footer__meta li {
+  color: #d7ccb8;
+  line-height: 1.45;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding-top: 0.95rem;
+}
+
+.footer__bottom p {
+  font-weight: 600;
+  color: #eee5d5;
+}
+
+.footer__bottom small {
+  color: #d3c7b1;
+}
+
+@media (max-width: 900px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+  }
+}

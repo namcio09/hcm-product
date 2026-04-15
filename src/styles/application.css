@@ -1,0 +1,52 @@
+.application__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.application__card {
+  background: linear-gradient(150deg, var(--surface-1), var(--surface-2));
+  border: 1px solid rgba(168, 182, 166, 0.52);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  display: grid;
+  gap: 0.65rem;
+  box-shadow: 0 10px 24px rgba(33, 53, 43, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.application__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 30px rgba(33, 53, 43, 0.17);
+}
+
+.application__icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(45, 90, 74, 0.12);
+  color: var(--accent-olive);
+}
+
+.application__icon {
+  font-size: 1.2rem;
+}
+
+.application__card h3 {
+  font-size: 1.12rem;
+  color: var(--heading-main);
+}
+
+.application__card ul {
+  color: var(--text-muted);
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .application__grid {
+    grid-template-columns: 1fr;
+  }
+}
